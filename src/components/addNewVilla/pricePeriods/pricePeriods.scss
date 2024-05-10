@@ -1,0 +1,66 @@
+.pricePeriods {
+    padding: 10px;
+    background: #ecf0fa;
+    border-radius: 5px;
+
+    .pp_title {
+        padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0035802b;
+
+        >ul {
+            display: flex;
+            align-items: center;
+
+            >li {
+                width: calc(calc(100% / 6) - 20px);
+                margin: 5px 10px;
+                font-weight: 500;
+                font-size: 14px;
+                color: #003580;
+            }
+        }
+    }
+
+    .pp_body {
+        >ul {
+            display: flex;
+            align-items: center;
+
+            >li {
+                width: calc(calc(100% / 6) - 20px);
+                margin: 5px 10px;
+
+                input {
+                    width: 100%;
+                    height: 30px;
+                    padding: 3px;
+                    border: 1px solid #00358047;
+                    background: #e3eaff;
+                    color: #003580;
+                    text-indent: 5px;
+                    font-size:14px;
+                    font-weight: 500;
+                }
+
+                svg {
+                    font-size: 40px;
+                    color: #ff3b3b;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    >button {
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        background: #ffab00;
+        font-weight: 500;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+        color: #003580;
+    }
+}

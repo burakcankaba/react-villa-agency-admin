@@ -1,0 +1,54 @@
+.quickSearch {
+    position: relative;
+
+    .navSearchBar {
+        border-radius: 20px;
+        background: #ecf0fa;
+        border: 1px solid #ecf0fa;
+        padding: 0 25px;
+        height: 40px;
+        transition: .3s;
+
+        &::placeholder {
+            color:#737f9e;
+        }
+
+        &:focus {
+            color: #000;
+            background-color: #fff;
+            border-color: #ffab00 !important;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgb(255 171 0 / 38%);
+        }
+
+
+    }
+
+    >button {
+        position: absolute;
+        top: 8px;
+        right: 6px;
+        background-color: transparent;
+        color: #b4bdce;
+        font-size: 22px;
+
+    }
+
+
+}
+
+body[dir="ltr"] {
+    .quickSearch {
+        >button {
+            right: 3px;
+        }
+    }
+}
+
+body[dir="rtl"] {
+    .quickSearch {
+        >button {
+            left: 3px;
+        }
+    }
+}

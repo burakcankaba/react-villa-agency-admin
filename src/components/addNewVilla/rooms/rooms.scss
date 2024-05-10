@@ -1,0 +1,41 @@
+.imgSelectedInfo {
+    padding: 5px 12px;
+    margin-top: 10px;
+    background: #ffab00;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.imgBtnGroup {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .imgUpload {}
+
+    .uploadBtn {
+        background: #22c03c;
+        color: white;
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        width: 300px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 3px;
+
+        button {
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+    }
+}

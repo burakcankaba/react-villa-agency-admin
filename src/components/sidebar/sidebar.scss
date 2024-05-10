@@ -1,0 +1,212 @@
+.sidebar {
+  .top {
+    height: 62px;
+    padding: 0px 20px;
+    border-bottom: 1px solid #eae8f1;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+
+    >a {
+
+
+      img {
+        width: 160px;
+        padding-top: 6px;
+      }
+    }
+  }
+
+  .loggedTeamMember {
+    text-align: center;
+    padding: 10px 0;
+
+    .ltm_img {
+      position: relative;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #eae8f1;
+        box-shadow: 0 5px 5px #2c2c2c33;
+        padding: 3px;
+        background: #fff;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+      }
+
+      span {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 99px;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 2px rgb(255 255 255 / 95%);
+        border-radius: 100%;
+        top: 70px;
+        background: #22c03c;
+      }
+    }
+
+    .ltm_info {
+      padding: 10px 0;
+
+      h4 {
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 15px;
+        color: #275b93;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        color: #fbaf40;
+      }
+    }
+  }
+
+  .center {
+    padding-top: 63px;
+
+    >ul:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    >ul {
+
+
+      >p {
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        margin-left: 15px;
+        color: #737f9e;
+        font-weight: 500;
+
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+      }
+
+      >li.logout {
+        background: #ffab00;
+        color: white;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+
+        svg {
+
+          font-size: 16px;
+
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      >li>div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        >div {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        >svg {
+          font-size: 20px !important;
+        }
+      }
+
+      >li {
+        >ul.openedMenu{
+          height:auto;
+          overflow: visible;
+        }
+        >ul {
+          background: #f2f6ff;
+          height:0;
+          transition:.5s;
+          overflow: hidden;
+          >li {
+            
+            >a {
+              padding: 10px 15px;
+              padding-left: 30px;
+              margin: 0;
+              border-radius: 0;
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              gap: 5px;
+              transition: 0.3s;
+              &:hover {
+                background: #003580;
+    
+                span {
+                  color: white;
+                }
+              }
+              >svg {
+                color: #ffab00;
+                font-size: 16px;
+              }
+
+              >span {
+                font-size: 13px;
+                font-weight: 500;
+                color: #003580;
+              }
+            }
+          }
+        }
+
+        >a,
+        >div {
+          padding: 10px 15px;
+          margin: 0;
+          border-radius: 0;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #000;
+          gap: 5px;
+          transition: .3s;
+
+          &:hover {
+            background: #003580;
+
+            span {
+              color: white;
+            }
+          }
+
+          svg {
+            color: #ffab00;
+            font-size: 16px;
+
+          }
+
+
+          span {
+            font-size: 13px;
+            font-weight: 500;
+            color: #003580;
+          }
+        }
+      }
+    }
+  }
+}

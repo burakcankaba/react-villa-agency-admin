@@ -1,0 +1,100 @@
+.table {
+    .activeUser {
+      background: #fff8ed;
+    }
+  
+    .cellWrapper {
+      display: flex;
+      align-items: center;
+  
+      .image {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+    }
+  
+    .status {
+      padding: 5px;
+      border-radius: 5px;
+  
+      &.Approved {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.151);
+      }
+  
+      &.Pending {
+        color: goldenrod;
+        background-color: rgba(189, 189, 3, 0.103);
+      }
+    }
+  
+    a.btnDetail {
+      background: #003580;
+    }
+  
+    button.btnDelete {
+      background: red;
+    }
+  
+    a.btnUpdate {
+      background: #fbaf40;
+    }
+  
+    .buttonContainer {
+      display: flex;
+      gap: 5px;
+    }
+  
+    button,a {
+  
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      border-radius: 3px;
+      cursor: pointer;
+  
+      svg {
+        color: white;
+        font-size: 20px;
+      }
+  
+    }
+  }
+  
+  .ListVillas {
+    .lu_actions {
+      display: flex;
+      justify-content: flex-end;
+      gap:20px;
+      padding:10px 0;
+      align-items: center;
+      input{
+        height: 30px;
+      padding: 0 10px;
+      border-radius: 3px;
+      border: 2px solid #ffab00;
+      }
+      a{
+        text-decoration: none;
+        background-color: #fbaf40;
+        padding:5px;
+        color:white;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap:5px;
+        svg{
+          font-size:20px;
+        }
+        span{
+          font-size:15px;
+        }
+      }
+    }
+  }
